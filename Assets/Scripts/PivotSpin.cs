@@ -17,7 +17,7 @@ public class PivotSpin : MonoBehaviour
         if (Input.GetMouseButtonDown(0) || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began))
         {
             isClockwise = !isClockwise;
-            StartCoroutine(panelActivation());
+            //StartCoroutine(panelActivation());
             Debug.Log("Tapped! Now spinning " + (isClockwise ? "clockwise" : "anticlockwise"));
         }
 
